@@ -1,0 +1,23 @@
+{
+  "name": "express-middleware",
+  "version": "1.0.0",
+  "description": "express middelware to handle req",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "express-middleware"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Rajesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
