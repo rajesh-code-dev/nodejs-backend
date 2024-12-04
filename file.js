@@ -6,3 +6,23 @@ const fs = require("fs");
 
 // ASYNC
 fs.writeFile("text.txt", "hello file system async", (err) => {});
+
+// Question
+// what is difference between sync and async?
+// sync program works in a sequence and every task depend on the other to finish.
+// in async every program works independently and can executed in parralel wothout
+// blocking the program flow.
+
+// READ FILE
+// sync // ITS returns the result
+const result = fs.readFileSync("./contacts.txt", "utf-8");
+console.log(result);
+
+// async // this is not returns the result, its a callback func
+fs.readFile("contacts.txt", "utf-8", (err, result) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(result);
+  }
+});
