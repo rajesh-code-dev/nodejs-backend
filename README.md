@@ -16,6 +16,7 @@
 
 ```
 index.js
+file.js
 localStorage.txt
 package-lock.json
 package.json
