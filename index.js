@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const { x, calculateSum } = require("./app");
 
 app.use((req, res, next) => {
   console.log(req.method);
@@ -11,6 +12,8 @@ app.use((req, res, next) => {
   );
   next();
 });
+
+console.log(x);
 
 app.get("/", (req, res) => {
   res.send("hello express");
